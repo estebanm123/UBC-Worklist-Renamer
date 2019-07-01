@@ -91,6 +91,7 @@ if (delWorkListForm != null) {
 	});
 }	
 
+// returns currently selected worklist in course schedule nav
 function getCurWorkListLink() {
 	let curWorkListli = document.querySelector("ul[class='nav nav-list bootstrap-sidenav docs-sidenav affix-top'] > li[class='active']");
 	return curWorkListli.firstChild;
