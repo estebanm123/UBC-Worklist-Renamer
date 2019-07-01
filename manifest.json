@@ -1,0 +1,26 @@
+{
+	"name": "UBC Worklist Renamer",
+	"version": "1.0",
+	"description": "Rename your worklists!",
+	"manifest_version": 2,
+	"author": "Esteban Margaron",
+	"page_action": {
+		"default_icon": {
+			"16": "images/icon16.png",
+			"24": "images/icon24.png",
+			"32": "images/icon32.png"
+		},
+		"default_title": "UBC Worklist Renamer"
+	},
+	"permissions": [ 
+		"storage"
+	],
+	"content_scripts": [{
+		"css": ["styles.css"],
+		"js": ["content.js"],
+		"matches": ["https://courses.students.ubc.ca/cs/*"]
+	}]
+				
+		
+}
+
